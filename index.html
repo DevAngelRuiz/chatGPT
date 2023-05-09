@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>ChatGPT</title>
+</head>
+<body>
+    <section class="head">
+        <h1>ChatGPT</h1>
+
+
+    </section>
+    <section class="main">
+        <div id="chat-box">
+  
+        </div>
+    <div id="status">
+        <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+        <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite"
+            begin="0.1"/>    
+        </circle>
+        <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite" 
+            begin="0.2"/>       
+        </circle>
+        <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+          <animate
+            attributeName="opacity"
+            dur="1s"
+            values="0;1;0"
+            repeatCount="indefinite" 
+            begin="0.3"/>     
+        </circle>
+      </svg>
+</div>
+
+
+</section>
+    <section class="footer">
+        <div class="question__container">
+            <input id="question-message" type="text" placeholder="Digite aqui sua pergunta...">
+            <button id="btn-submit" onclick="sendQuestion()">Enter</button>
+        </div>
+       
+
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

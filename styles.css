@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("./assets/chatgpt.jpg");
+    background-size: cover;
+    background-position: right;
+    width: 100vw;
+}
+
+.head {
+    height: 10vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    background: rgba(0, 255, 255, 0.5);
+    margin: 1% 1% 0 1%;
+
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.main {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(238, 241, 241, 0.5);
+    margin: 0 1% 0% 1%;
+}
+
+.footer {
+    height: 16vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 30px 30px;
+    background: rgba(14, 244, 244, 0.5);
+    margin: 0% 1% 1% 1%;
+}
+
+.question__container {
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+input {
+    height: 8vh;
+    width: 40vw;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0 1%;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-right: 5%;
+}
+
+button {
+    height: 8vh;
+    min-width: 10vw;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    background: rgba(0, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+
+svg {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#status{
+    display: none;
+
+}
+
+
+#chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2%;
+    font-size: 1.2rem;
+    max-height: 65vh;
+    overflow-y: auto;
+}
+.question-text, .anyswer-text
+{
+    background: floralwhite;
+    border-radius: 30px;
+    padding: 2%;
+    font-family: system-ui;
+    font-weight: 600;
+}
+.question-text {
+    width: 30%;
+    display: flex;
+    align-self: flex-end;
+    background: aliceblue;
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+        .head,
+        .main,
+        .footer {
+            width: 98vw;
+
+        }
+
+        .head {
+            background: rgba(117, 80, 96, 0.5);
+        }
+
+        .footer {
+            height: 18vh;
+        }
+
+    }
+@media screen and (max-width: 768px) {
+    .question__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        width: 80vw;
+        margin-right: 0%;
+    }
+    button{
+        height: 6vh;
+        width: 20vw;
+        margin-top: 2%;
+    }
+    }
